@@ -1,6 +1,6 @@
 cadena1 = "Hola maquinola"
 cadena2 = "sdfs"
-
+cadena3 = "Hola,Como,Estas?"
 dir(cadena2)
 #con el metodo dir() me muestra todos los metodos que puedo utilizar con lo que coloque dentro de los parentesis.
 
@@ -38,3 +38,26 @@ print (es_alfa)
 buscar_coincidencias = cadena1.count("a")
 print (buscar_coincidencias)
 
+#contamos cuantos caracteres tiene la cadena!! Ojo len NO es un metodo es una funcion por lo tanto se coloca  nombre = lent(cadena1)
+
+contar_caracteres = len(cadena2)
+print(contar_caracteres)
+
+#Verificamos sin una cadena empieza con otra cadena, si es asi devuelve true
+empieza_con = cadena1.startswith("Ho")
+print (f" Is True if start with, so is: {empieza_con}")
+
+#Verificamos sin una cadena termina con otra cadena, si es asi devuelve true
+termina_con = cadena1.endswith("la")
+print(termina_con)
+
+#reemplaza la cadena dada por la cadena nueva .replace()  SINO encuentra coincidencia con la cadena buscada, nos devuelve la cadena inicial.
+nueva_cadena = cadena2.replace("sd", "ae")
+print(nueva_cadena)
+
+cadena_oredenada = cadena3.replace("," , " ")
+print(cadena_oredenada.capitalize())
+
+#el metodo .split(",") me separa y me genera una lista nueva PERO me lo separa cuando le coloco la "," sino NO lo separa 
+separada = cadena3.split("*")
+print(separada[0])
