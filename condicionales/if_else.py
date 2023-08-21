@@ -25,4 +25,3 @@ elif sueldo <1500 :
     else:
         print("ganas muy poco")
 
-    
