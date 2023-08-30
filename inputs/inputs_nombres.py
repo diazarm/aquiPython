@@ -3,3 +3,4 @@ nombre = input("che maestro, dame tu nombre: ")
 
 #Mostrar el dato (en el ejemplo)
 print(f"el nombre es: {nombre}")
+
