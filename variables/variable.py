@@ -1,3 +1,5 @@
+# Las variables no pueden iniciar con numeros, y no pueden tener caracteres especiales.
+#! las constantes inician con mayusculas
 #las variablea se declaran y se definen 
 nombre = 'marcelo'
 #defino la variable nombre como marcelo, y declaro que es un string
@@ -17,7 +19,6 @@ del nombre
 
 #Operadores de pertenencia  SOLO nos entrega tryu o false
 print("lucas" in apellido)  #me indica si esta "lucas" en la variable apellido  
-print("lucas" not in apellido) #me indica si NO esta en la variable apellido
+#print("lucas" not in apellido) #me indica si NO esta en la variable apellido
 
 print(nombre_de_tu_snake_case)
-
