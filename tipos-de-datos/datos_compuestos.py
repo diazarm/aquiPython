@@ -21,3 +21,31 @@ diccionario = {
     }
 print(diccionario['apellido'])
 
+# de aca para abajo es practica
+
+laListaVaConCorchetes = ["Hola","Soy Marcelo"]
+print(laListaVaConCorchetes[0])
+laListaVaConCorchetes[0] = "cara de mono"
+print(laListaVaConCorchetes[0])
+
+laTuplaVaEntreParentesis = ("Chau","Soy Francesco")
+
+print(laTuplaVaEntreParentesis)
+
+elConjuntoEsUnico = {45,"Gato"}
+print(elConjuntoEsUnico)
+
+# Ejercicio 1: Manipulación de Listas
+# Escribe un programa que realice las siguientes operaciones:
+
+# Crea una lista llamada numeros con los números del 1 al 10.
+# Imprime la lista original.
+# Agrega el número 11 al final de la lista.
+# Inserta el número 0 al principio de la lista.
+# Imprime la lista después de realizar las operaciones anteriores.
+# Elimina el número 5 de la lista.
+# Imprime la lista final.
+
+numeros = [1,2,3,4,5,6,7,8,9,10]
+
+print(numeros)

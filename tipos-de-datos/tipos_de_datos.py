@@ -3,9 +3,10 @@ a = """tus datos
 son  
 print (2+3)"""
 
-print(a)
 
 
-
+f = "un string"
+dir(f)
+print (f)
   
 

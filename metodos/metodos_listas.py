@@ -48,6 +48,7 @@ lista_numerica = list([True,34,5,2,56,False])
 lista_numerica.sort()
 
 #lista_numerica.sort(reverse=True) #con reverse los hacemos descendente
+print(f"Lista numerica ordenada {lista_numerica}")
 
 lista_numerica.reverse() #es lo mismo que poner reverse=True  Pero el reverse, sirve para revertir cualquier lista, la ordenemos o no.
 

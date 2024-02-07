@@ -8,6 +8,8 @@ print(division_baja)
 
 #type()  es como el typeof() de JS 
 
+tipo_de_dato1 = type(division_comun)
 tipo_de_dato = type(division_baja)
+print(tipo_de_dato1)
 print(tipo_de_dato)
 
