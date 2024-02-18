@@ -56,25 +56,36 @@ print(f"Lista convertida a Tupla: \n{nuevas_frutas}")
 
 print("-------------------Ejercicios3--------------------------")
 
-num1 = int(input(f"\nIngrese el primer numero: "))
-num2 = int(input(f"Ingrese el segundo numero: "))
+def sumar(a, b):
+    suma = a + b
+    return f"La Suma es: {suma}"
 
-operacion = input(f"Que operacion desea hacer? sumar o restar:  ")
+def restar(a, b):
+    resta = a - b
+    return f"La Resta es: {resta}"
 
-    
+def multiplicar(a, b):
+    multi = a * b
+    return f"La Multiplicación es: {multi}"
 
-def sumar(num1, num2):
-    suma = num1 + num2
-    return suma
+def default():
+    return "Opción no válida"
 
-def restar(num1, num2):
-    resta = num1 - num2
-    return resta
+def switch_case(case, a, b):
+    switch_dict = {
+        1: sumar,
+        2: restar,
+        3: multiplicar
+    }
+    selected_function = switch_dict.get(case, default)
+    return selected_function(a, b)
 
+# Ingreso de datos
+num1 = int(input("Ingrese el primer numero: "))
+num2 = int(input("Ingrese el segundo numero: "))
+opcion = int(input("Ingrese una operacion: 1-sumar 2-restar 3-multiplicar "))
 
-if (operacion == "sumar") : 
-    print(f"La Suma es: {sumar(num1, num2)}")
-else : 
-    print(f"La Resta es: {restar(num1, num2)}")
-
+# Uso de la función switch_case
+resultado = switch_case(opcion, num1, num2)
+print(resultado)
 
